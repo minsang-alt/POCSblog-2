@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>새 글 쓰기</title>
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/articleWrite.css">
+    <link rel="stylesheet" href="css/article.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="section">
+              <div class="top_navbar">
+                <div class="hamburger">
+                  <a href="#">
+                    <i class="fas fa-bars">클릭</i>
+                  </a>
+                </div>
+              </div>
+              
+                <div class="container">
+                    <h2>새 글 쓰기</h2>
+                    <div class="articleContainer">
+                    <fieldset>
+                    <form name="글 작성" class="articleWrite" action="/posts" method="post">
+                        <div>
+                            <select id="category" name="categroryCode" >
+                                <option value>게시판을 선택해 주세요</option>
+                                <option value="adminAnswer" class="hidden">공지사항</option>
+                                <option value="test">테스트</option>
+                            </select>
+
+                        </div>
+                        <div>
+                        <input class="title" type="text" placeholder="제목을 입력하세요" required>
+                        </div>
+                        <br>
+                    
+                        <textarea name="adminAnswer" class="write" placeholder="내용을 입력하세요" required></textarea><br>
+
+                        <button class="btn-article">게시</button>
+                        
+                    </form>
+                    </fieldset>
+                    </div>
+                </div>
+              
+            </div>
+            <!--Top menu -->
+            <div class="sidebar">
+              <div class="profile">
+                <img
+                  src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg"
+                  alt="profile_picture">
+                <h3>Anamika Roy</h3>
+                <p>Designer</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">
+        
+                    <span class="item">Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="people" href="userSearch.html" >
+        
+                    <span class="item">People</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="notices.html" class="active">
+        
+                    <span class="item">POCS-공지사항</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+        
+                    <span class="item">Perfomance</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+        
+                    <span class="item">Development</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+        
+                    <span class="item">Reports</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+        
+                    <span class="item">Admin</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+        
+                    <span class="item">Settings</span>
+                  </a>
+                </li>
+              </ul>
+        
+            </div>
+        
+        
+          </div>
+          <script src="js/menu.js"></script>
+          <script src="js/articleWrite.js"></script>
+          <script src="js/isUser.js"></script>
+    </body>
+
+</html>
